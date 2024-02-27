@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daftar</title>
+</head>
+<body>
+    <h1> universitas mdp</h1>
+    <hr/>
+    <a herf="index.html">Home</a>
+    <hr/>
+    <hr2> pendaftaran mahasiswa baru</hr2>
+    <!-- form-->
+    <form action="proses.php"method="post">
+        nama calon mahasiswa <br>
+        <input type = "text" requid/>
+
+        Tanggal lahir<br/>
+        <input type="date" name="tgl_lahir"
+        id=" tgl_lahir"requid /><br/>
+
+        jenis kelamin<br>
+        <input type ="radio" name=""jk"
+        id="jkl " value="l" checked/> laki-laki
+
+        <br/>
+        jenis kelamin<br>
+        <input type ="radio" name=""jk"
+        id="jkp " value= "p"checked/> perempuan
+
+        jalur penerimaan <br/>
+        <select name=" jp" id="jp">
+            <option value ="jit">jalur tanpa tes
+            </option>
+            <option value ="jt">jalur tes
+            </option>
+            <option value ="jb">jalur beasiswa
+
+            </option>
+        </select>
+
+
+        <br/>
+        <button type="submit">simpan</button>
+
+    </form>
+
+</body>
+</html>
