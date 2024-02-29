@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+/* elemenen selector*/
+body{
+    background-color:#C6DCBA;
+     font-family: arial;
+     color: white
+}
+
+/* class selector*/
+.text-primary{
+    color:pink;
+    
+}
+.col{
+    width: 25%;
+    float: left;
+}
+.col-50{
+    width: 50%;
+    float: left;
+}
+.img-responsive{
+    width: 100%;
+    max-height: 500px;
+}
+
+.circle{
+    border-radius:50%;
+}
+.rounded{
+    border-radius:20%;
+}
+.p-1{
+    padding: 10px;
+}
