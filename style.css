@@ -9,16 +9,41 @@ body{
      color: white
 }
 
-/* class selector*/
-.text-primary{
-    color:pink;
-    
+/* media query */
+/* tablet : layout yang ditampilkan 2 kolom */
+@media screen and (min-width: 600px){
+body {
+    background-color: #FFB5DA;
 }
-.col{
+.col-sm-6{
+    width: 50%;
+    float: left;
+    
+}    
+.col-sm-12{
+    width: 100%;
+    float: left;
+}
+}
+/* destop : layout yang ditampilkan 4 kolom */
+@media  screen and (min-width: 992px) {
+    body{
+        background-color: #B5C0D0;
+    }
+    .col-lg-3{
     width: 25%;
     float: left;
 }
-.col-50{
+.col-lg-6{
+    width: 50%;
+    float: left;
+}
+}
+/* class selector*/
+.text-primary{
+    color:pink;
+}
+col-50{
     width: 50%;
     float: left;
 }
@@ -35,4 +60,9 @@ body{
 }
 .p-1{
     padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
