@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javaScript</title>
-</head>
-<body>
-    <h1 id="welcome"></h1>
-    <p id="nama"></p>
-    <p id="email"></p>
+document.getElementById("welcome").innerHTML = "Selamat Datang";
+document.getElementById("nama").innerHTML = "<b>puspus</b>";
+document.getElementById("email").innerHTML = "puspita@test.com";
 
-    <!--formulir-->
-    <input type = "text" name=""id="txtNama"/>
-    <button id="btnkirim" onclick="tampil"()
-    ">kirim</button>
+console.log("Hanya Bisa dilihat di console");
 
-    <!-- panggil script js -->
-    <script src="Script.js"></script>
-</body>
-</html>
+// variabel
+let nama = "";
+let email = "";
+let data = []; //aray / lstik
+// function
+function tampil(){
+    console.log("Button ditekan");
+    nama = document.getElementById("txtNama").value;
+    email = document.getElementById("txtEmail").value;
+    console.log(nama);
+    document.getElementById("nama").innerHTML = nama;
+    document.getElementById("email").innerHTML = email;
+    // simpan ke dalam array data
+    data.push(nama);
+    console.log(data);
+}
